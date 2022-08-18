@@ -263,10 +263,3 @@ public:
 	}
 };
 
-int main() {
-	STR s;
-	s = "I love mountains";
-	std::cout << s;
-
-	return 0;
-}
