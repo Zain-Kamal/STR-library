@@ -137,16 +137,22 @@ public:
 
 	//Arithmetic operators
 	STR& operator+(const STR& s) {
-		this->push_back(s);
-		return *this;
+		STR temp;
+		temp.push_back(*this);
+		temp.push_back(s);
+		return temp;
 	}
 	STR& operator+(const std::string& s) {
-		this->push_back(s);
-		return *this;
+		STR temp;
+		temp.push_back(*this);
+		temp.push_back(s);
+		return temp;
 	}
 	STR& operator+(const char c) {
-		this->push_back(c);
-		return *this;
+		STR temp;
+		temp.push_back(*this);
+		temp.push_back(c);
+		return temp;
 	}
 
 	//Input/Output stream
